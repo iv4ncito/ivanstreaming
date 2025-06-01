@@ -94,15 +94,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.createElement('button');
   toggleBtn.textContent = '🛒 Ver Carrito';
   toggleBtn.style.position = 'fixed';
-  toggleBtn.style.bottom = '30px';
-  toggleBtn.style.right = '30px';
+  toggleBtn.style.bottom = '40px';
+  toggleBtn.style.right = '100px';
   toggleBtn.style.padding = '15px';
   toggleBtn.style.background = '#4facfe';
   toggleBtn.style.border = 'none';
   toggleBtn.style.color = '#fff';
-  toggleBtn.style.borderRadius = '50px';
+  toggleBtn.style.borderRadius = '10000px';
   toggleBtn.style.cursor = 'pointer';
-  toggleBtn.style.zIndex = '1000';
+  toggleBtn.style.zIndex = '10000';
   toggleBtn.onclick = toggleCart;
 
   document.body.appendChild(toggleBtn);
@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.product-card').forEach(card => {
     const addBtn = document.createElement('button');
     addBtn.textContent = 'Agregar al carrito';
-    addBtn.style.marginTop = '15px';
-    addBtn.style.padding = '10px';
+    addBtn.style.marginTop = '100px';
+    addBtn.style.padding = '100px';
     addBtn.style.background = '#25d366';
     addBtn.style.color = '#fff';
     addBtn.style.border = 'none';
@@ -133,3 +133,4 @@ document.addEventListener('DOMContentLoaded', () => {
     card.appendChild(addBtn);
   });
 });
+
